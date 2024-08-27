@@ -26,7 +26,6 @@
               theme: {
                 extend: {
                   colors: {
-                    clifford: '#da373d',
                     'book-bg': '#ABEF5F',
                   },
                 },
@@ -272,8 +271,7 @@
          </section>
 
          <!-- Let’s Discuss Next Project -->
-          <section class="w-auto mt-3 bg-[url(./assets/bg.jpg)] bg-cover">
-            <section class=" bg-[#FFFFFF] p-14">
+          <section class=" bg-[#FFFFFF] p-14 bg-[url('assets/bg.jpg')] bg-cover">
               <div class="text-center">
                 <button class="btn bg-[#ABEF5F33]"><i class="fa-solid fa-arrow-right"></i>Let’s Connect</button>
                 <h1 class="text-5xl font-bold">Let’s Discuss Next Project</h1>
@@ -281,23 +279,28 @@
                   The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
                 </p>
               </div>
-              <div class="grid grid-col lg:grid-cols-2  space-y-4">
-                <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs " required />
-                <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs " required />
-                <input type="number" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs " required />
-                <input type="email" placeholder="Email Number*" class="input input-bordered w-full max-w-xs " required />
-              </div>
-              <textarea class="textarea textarea-bordered w-3/4 m-2" placeholder="Write your message here"></textarea>
+              <div class="justify-center text-center">
+                <div class="grid grid-1 lg:grid-cols-2 space-y-4 ">
+                  <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs " required />
+                  <input type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs " required />
+                  <input type="number" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs " required />
+                  <input type="email" placeholder="Email Number*" class="input input-bordered w-full max-w-xs " required />
+                </div>
+                <textarea class="textarea textarea-bordered w-3/4 m-2" placeholder="Write your message here"></textarea>
+                </div>
+                <div class=" text-center m-auto w-3/4">
+                  <a class="btn btn-block bg-book-bg">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-lg"></i></a>
+                </div>
           </section>
     </main>
 
-    <footer class=" bg-black text-white p-10">
+    <footer class="footer footer-center bg-black text-white p-10">
       <div class="items-center text-center">
       <a class="text-xl font-bold"><i class="fa-solid fa-arrow-right -rotate-45 bg-book-bg rounded-xl text-black"></i>Rinterio</a>
       <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
       </div>
-        <div class="flex lg:flex-col justify-center">
-          <ul class="text-center">
+        <div class="font-bold">
+          <ul class="flex flex-col lg:flex-row text-center space-y-2 lg:space-x-9">
             <li><a>Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
@@ -305,8 +308,8 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-      <div class="navbar-end text-center m-auto">
-        <a class="btn bg-book-bg">Button<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-lg"></i></a>
+      <div class="navbar-center text-center m-auto">
+        <a class="btn bg-book-bg">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-lg"></i></a>
       </div>
     </footer>
 </body>
